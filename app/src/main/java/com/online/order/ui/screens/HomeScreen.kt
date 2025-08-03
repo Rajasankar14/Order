@@ -51,6 +51,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color.Companion.Gray
 import androidx.compose.ui.graphics.Color.Companion.LightGray
 import androidx.compose.ui.graphics.Color.Companion.Transparent
 import androidx.compose.ui.layout.ContentScale
@@ -313,7 +314,7 @@ fun BottomNavigationBar(
                             modifier = Modifier
                                 .size(25.dp)
                                 .padding(top = 6.dp),
-                            tint = if (isSelected) orangeNavItem else LightGray
+                            tint = if (isSelected) orangeNavItem else Gray
                         )
 
 
@@ -323,7 +324,7 @@ fun BottomNavigationBar(
                             fontWeight = FontWeight.Bold,
                             fontSize = 12.sp,
                             maxLines = 1,
-                            color = if (isSelected) orangeNavItem else LightGray,
+                            color = if (isSelected) orangeNavItem else Gray ,
                             modifier = Modifier.padding(top = 2.dp)
                         )
                     }
